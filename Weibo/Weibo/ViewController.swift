@@ -3,7 +3,7 @@
 //  Weibo
 //
 //  Created by dwt on 17/2/19.
-//  Copyright © 2017年 董文涛. All rights reserved.
+//  Copyright © 2017年 Dwt. All rights reserved.
 //
 
 import UIKit
