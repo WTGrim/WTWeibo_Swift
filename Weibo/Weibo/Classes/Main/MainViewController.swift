@@ -38,7 +38,6 @@ class MainViewController: UITabBarController {
         guard let anyObject = try? NSJSONSerialization.JSONObjectWithData(jsonData, options: .MutableContainers) else{
             return
         }
-        
         guard let dictArray = anyObject as? [[String : AnyObject]] else{
             return
         }
