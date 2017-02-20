@@ -18,6 +18,7 @@
 		0274F6AA1E5979B900A0FBC8 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6A91E5979B900A0FBC8 /* MessageViewController.swift */; };
 		0274F6AC1E5979C900A0FBC8 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6AB1E5979C900A0FBC8 /* DiscoverViewController.swift */; };
 		0274F6AE1E5979D700A0FBC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */; };
+		02E93D791E5B1AC400D07B3C /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E93D781E5B1AC400D07B3C /* MainVCSettings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		0274F6A91E5979B900A0FBC8 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		0274F6AB1E5979C900A0FBC8 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		02E93D781E5B1AC400D07B3C /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 		0274F69D1E5945FC00A0FBC8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				02E93D771E5B1AC400D07B3C /* Resource */,
 				0274F69F1E5945FC00A0FBC8 /* Home */,
 				0274F6A11E5945FC00A0FBC8 /* Message */,
 				0274F69E1E5945FC00A0FBC8 /* Discover */,
@@ -183,6 +186,15 @@
 				0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		02E93D771E5B1AC400D07B3C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				02E93D781E5B1AC400D07B3C /* MainVCSettings.json */,
+			);
+			name = Resource;
+			path = ../Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,6 +306,7 @@
 			files = (
 				0274F67A1E5940D200A0FBC8 /* LaunchScreen.storyboard in Resources */,
 				0274F6771E5940D200A0FBC8 /* Assets.xcassets in Resources */,
+				02E93D791E5B1AC400D07B3C /* MainVCSettings.json in Resources */,
 				0274F6751E5940D200A0FBC8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -553,6 +566,7 @@
 				0274F6961E5940D200A0FBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0274F6971E5940D200A0FBC8 /* Build configuration list for PBXNativeTarget "WeiboTests" */ = {
 			isa = XCConfigurationList;
@@ -561,6 +575,7 @@
 				0274F6991E5940D200A0FBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0274F69A1E5940D200A0FBC8 /* Build configuration list for PBXNativeTarget "WeiboUITests" */ = {
 			isa = XCConfigurationList;
@@ -569,6 +584,7 @@
 				0274F69C1E5940D200A0FBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
