@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HVm-Gg-VSm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="oBS-0k-uej">
+            <objects>
+                <tableViewController id="ZuE-Od-0jk" customClass="HomeViewController" customModule="Weibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kE5-YG-8z1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="ZuE-Od-0jk" id="Fwh-Lb-2qg"/>
+                            <outlet property="delegate" destination="ZuE-Od-0jk" id="PVp-Qv-oJX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="首页" id="B2L-XZ-0Rf"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POZ-OG-acb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="508" y="-923"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="eZM-20-AJv">
+            <objects>
+                <navigationController id="HVm-Gg-VSm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabbar_home" id="VLN-Ao-rr0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gK0-F6-1GR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZuE-Od-0jk" kind="relationship" relationship="rootViewController" id="CLC-1R-fRp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KIc-es-Oeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-312" y="-923"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tabbar_home" width="30" height="30"/>
+    </resources>
+</document>
