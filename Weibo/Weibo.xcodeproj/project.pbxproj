@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0207004B1E627C7600E44556 /* UIButton-Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207004A1E627C7600E44556 /* UIButton-Category.swift */; };
 		026BC21C1E5DB73B0005A3C3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026BC21B1E5DB73B0005A3C3 /* Home.storyboard */; };
 		026BC21F1E5DB74D0005A3C3 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026BC21D1E5DB74D0005A3C3 /* Message.storyboard */; };
 		026BC2211E5DB7650005A3C3 /* Middle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026BC2201E5DB7650005A3C3 /* Middle.storyboard */; };
@@ -24,6 +25,9 @@
 		0274F6AC1E5979C900A0FBC8 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6AB1E5979C900A0FBC8 /* DiscoverViewController.swift */; };
 		0274F6AE1E5979D700A0FBC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */; };
 		02E93D791E5B1AC400D07B3C /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E93D781E5B1AC400D07B3C /* MainVCSettings.json */; };
+		02FC0A511E62EF3200648A20 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC0A501E62EF3200648A20 /* BaseViewController.swift */; };
+		02FC0A531E62F08100648A20 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC0A521E62F08100648A20 /* VisitorView.swift */; };
+		02FC0A551E62F09100648A20 /* VisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02FC0A541E62F09100648A20 /* VisitorView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0207004A1E627C7600E44556 /* UIButton-Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Category.swift"; sourceTree = "<group>"; };
 		026BC21B1E5DB73B0005A3C3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../../Home.storyboard; sourceTree = "<group>"; };
 		026BC21E1E5DB74D0005A3C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Message.storyboard; sourceTree = "<group>"; };
 		026BC2201E5DB7650005A3C3 /* Middle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Middle.storyboard; path = ../Middle.storyboard; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 		0274F6AB1E5979C900A0FBC8 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		02E93D781E5B1AC400D07B3C /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		02FC0A501E62EF3200648A20 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		02FC0A521E62F08100648A20 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
+		02FC0A541E62F09100648A20 /* VisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VisitorView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +102,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020700481E627C3000E44556 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				020700491E627C3000E44556 /* Category */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		020700491E627C3000E44556 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				0207004A1E627C7600E44556 /* UIButton-Category.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		0274F6631E5940D200A0FBC8 = {
 			isa = PBXGroup;
 			children = (
@@ -154,6 +178,7 @@
 				0274F69E1E5945FC00A0FBC8 /* Discover */,
 				0274F6A21E5945FC00A0FBC8 /* Profile */,
 				0274F6A01E5945FC00A0FBC8 /* Main */,
+				020700481E627C3000E44556 /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -179,7 +204,9 @@
 		0274F6A01E5945FC00A0FBC8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				02FC0A4F1E62EF1300648A20 /* Visitor */,
 				0274F6A51E59782300A0FBC8 /* MainViewController.swift */,
+				02FC0A501E62EF3200648A20 /* BaseViewController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -210,6 +237,15 @@
 			);
 			name = Resource;
 			path = ../Resource;
+			sourceTree = "<group>";
+		};
+		02FC0A4F1E62EF1300648A20 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				02FC0A521E62F08100648A20 /* VisitorView.swift */,
+				02FC0A541E62F09100648A20 /* VisitorView.xib */,
+			);
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -320,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0274F67A1E5940D200A0FBC8 /* LaunchScreen.storyboard in Resources */,
+				02FC0A551E62F09100648A20 /* VisitorView.xib in Resources */,
 				026BC2241E5DB77A0005A3C3 /* Discover.storyboard in Resources */,
 				026BC21C1E5DB73B0005A3C3 /* Home.storyboard in Resources */,
 				0274F6771E5940D200A0FBC8 /* Assets.xcassets in Resources */,
@@ -356,6 +393,9 @@
 				0274F6701E5940D200A0FBC8 /* AppDelegate.swift in Sources */,
 				0274F6A61E59782300A0FBC8 /* MainViewController.swift in Sources */,
 				0274F6AA1E5979B900A0FBC8 /* MessageViewController.swift in Sources */,
+				0207004B1E627C7600E44556 /* UIButton-Category.swift in Sources */,
+				02FC0A511E62EF3200648A20 /* BaseViewController.swift in Sources */,
+				02FC0A531E62F08100648A20 /* VisitorView.swift in Sources */,
 				0274F6A81E5979A500A0FBC8 /* HomeViewController.swift in Sources */,
 				0274F6AC1E5979C900A0FBC8 /* DiscoverViewController.swift in Sources */,
 			);

@@ -12,11 +12,12 @@ class MainViewController: UITabBarController {
 
     //MARK:- 懒加载属性
     private lazy var imageNames = ["tabbar_home", "tabbar_message_center", "", "tabbar_discover", "tabbar_profile"]
+    private lazy var composeButton = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
     
     override func viewDidLoad() {
         super.viewDidLoad()
     
-
+        setComposeBtn()
         
         
         
@@ -95,6 +96,26 @@ class MainViewController: UITabBarController {
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        setItems()
+    }
+}
+
+extension MainViewController{
+    
+    private func setComposeBtn() {
+        //设置中间按钮
+//        composeButton.setBackgroundImage(UIImage(named: "tabbar_compose_button"), forState:.Normal)
+//        composeButton.setBackgroundImage(UIImage(named: "tabbar_compose_button_highlighted"), forState: .Highlighted)
+//        composeButton.setImage(UIImage(named: "tabbar_compose_icon_add"), forState: .Normal)
+//        composeButton.setImage(UIImage(named: "tabbar_compose_icon_add_highlighted"), forState: .Highlighted)
+//        composeButton.sizeToFit()
+        composeButton.center = CGPointMake(tabBar.center.x, tabBar.bounds.size.height * 0.5)
+        tabBar.addSubview(composeButton)
+        composeButton.addTarget(self, action: "composeButtonClick", forControlEvents: .TouchUpInside)
+    }
+    
+    private func setItems() {
+        
         //通过storyboard创建
         for i in 0 ..< tabBar.items!.count{
             
@@ -106,6 +127,17 @@ class MainViewController: UITabBarController {
             }
             item.selectedImage = UIImage(named: imageNames[i] + "_highlighted")
         }
-        
     }
 }
+
+//事件监听
+extension MainViewController{
+    
+    //事件监听 如果用private修饰那么不会添加到方法列表中，可以用@objc修饰，既保证了方法外界不能访问，同时添加到方法列表中，调用方法时不会发生崩溃
+    @objc private func composeButtonClick(){
+        
+        print("点击了发布按钮")
+    }
+    
+}
+
