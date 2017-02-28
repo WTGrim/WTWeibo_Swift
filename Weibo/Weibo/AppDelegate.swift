@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //设置全局颜色
         UITabBar.appearance().tintColor = UIColor .orangeColor()
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         
 //        window = UIWindow(frame: UIScreen.mainScreen().bounds)
 //        window?.rootViewController = MainViewController()
