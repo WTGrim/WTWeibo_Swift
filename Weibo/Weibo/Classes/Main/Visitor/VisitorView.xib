@@ -14,9 +14,9 @@
                     <rect key="frame" x="213" y="133" width="175" height="175"/>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_mask_smallicon" translatesAutoresizingMaskIntoConstraints="NO" id="QQP-Eu-pVW">
-                    <rect key="frame" x="0.0" y="0.0" width="600" height="440"/>
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="360"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="440" id="4et-Jh-gjy"/>
+                        <constraint firstAttribute="height" constant="360" id="4et-Jh-gjy"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visitordiscover_feed_image_house" translatesAutoresizingMaskIntoConstraints="NO" id="gyp-D9-zFX">
