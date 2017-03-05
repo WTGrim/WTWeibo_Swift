@@ -13,11 +13,12 @@ class PresentationController: UIPresentationController {
 
     private lazy var coverView = UIView()
     
+    lazy var presentedFrame : CGRect = CGRectZero
     
     override func containerViewWillLayoutSubviews() {
         super.containerViewWillLayoutSubviews()
         
-        presentedView()?.frame = CGRectMake((UIScreen.mainScreen().bounds.size.width - 180) * 0.5, 55, 180, 250)
+        presentedView()?.frame = presentedFrame
         
         setupCoverView()
     }
