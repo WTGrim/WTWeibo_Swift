@@ -13,6 +13,9 @@ class PopoverAnimator: NSObject {
     private var isPresented:Bool = false
     
     lazy var presentedFrame:CGRect = CGRectZero
+    
+    //弹出和消失状态的回调
+    var callBack:((presented:Bool)->())?
 
 }
 
@@ -31,12 +34,14 @@ extension PopoverAnimator:UIViewControllerTransitioningDelegate{
     //自定义弹出动画
     func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = true
+        callBack!(presented:isPresented)
         return self
     }
     
     //自定义消失动画
     func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = false
+        callBack!(presented: isPresented)
         return self
     }
 }

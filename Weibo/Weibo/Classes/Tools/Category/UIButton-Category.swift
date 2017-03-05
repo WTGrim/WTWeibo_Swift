@@ -32,6 +32,7 @@ extension UIButton{
         2.需要调用self.init
         3.便利构造函数需要在init前面加上convenience
     */
+    
     convenience init(imageName:String, bgImageName:String){
         
         self.init()
