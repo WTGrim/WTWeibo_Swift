@@ -8,7 +8,7 @@ target 'Weibo' do
 
 pod 'AFNetworking'
 pod 'SVProgressHUD'
-pod 'SnapKit'
+# pod 'SnapKit'
 pod 'SDWebImage'
 
 end

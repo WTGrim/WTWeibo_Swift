@@ -30,6 +30,7 @@
 		0274F6AA1E5979B900A0FBC8 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6A91E5979B900A0FBC8 /* MessageViewController.swift */; };
 		0274F6AC1E5979C900A0FBC8 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6AB1E5979C900A0FBC8 /* DiscoverViewController.swift */; };
 		0274F6AE1E5979D700A0FBC8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */; };
+		02B185731E6ED9F300EF507E /* NetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B185721E6ED9F300EF507E /* NetworkTool.swift */; };
 		02E93D791E5B1AC400D07B3C /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = 02E93D781E5B1AC400D07B3C /* MainVCSettings.json */; };
 		02FC0A511E62EF3200648A20 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC0A501E62EF3200648A20 /* BaseViewController.swift */; };
 		02FC0A531E62F08100648A20 /* VisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02FC0A521E62F08100648A20 /* VisitorView.swift */; };
@@ -84,6 +85,7 @@
 		0274F6A91E5979B900A0FBC8 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		0274F6AB1E5979C900A0FBC8 /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		0274F6AD1E5979D700A0FBC8 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		02B185721E6ED9F300EF507E /* NetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTool.swift; sourceTree = "<group>"; };
 		02E93D781E5B1AC400D07B3C /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		02FC0A501E62EF3200648A20 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		02FC0A521E62F08100648A20 /* VisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisitorView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				020700491E627C3000E44556 /* Category */,
 				024DD2D91E65A833004E6335 /* TitleButton.swift */,
+				02B185721E6ED9F300EF507E /* NetworkTool.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				0274F6701E5940D200A0FBC8 /* AppDelegate.swift in Sources */,
 				0252038B1E6A54F6006B0F2F /* PopoverControllerViewController.swift in Sources */,
 				0274F6A61E59782300A0FBC8 /* MainViewController.swift in Sources */,
+				02B185731E6ED9F300EF507E /* NetworkTool.swift in Sources */,
 				0274F6AA1E5979B900A0FBC8 /* MessageViewController.swift in Sources */,
 				024DD2DA1E65A833004E6335 /* TitleButton.swift in Sources */,
 				0207004B1E627C7600E44556 /* UIButton-Category.swift in Sources */,
