@@ -50,12 +50,15 @@ extension BaseViewController {
 //MARK:- 事件监听
 extension BaseViewController{
     
-   @objc private func leftBtnItemClick(){
+    @objc private func leftBtnItemClick(){
         print("点击了左边")
     }
     
-   @objc private func rightBtnItemClick(){
+    @objc private func rightBtnItemClick(){
         print("点击了右边")
+        let oauthVc = OAuthViewController()
+        let oauthNav = UINavigationController(rootViewController: oauthVc)
+        presentViewController(oauthNav, animated: true, completion: nil)
     }
 }
 

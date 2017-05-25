@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0207004B1E627C7600E44556 /* UIButton-Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0207004A1E627C7600E44556 /* UIButton-Category.swift */; };
+		02173E7F1ED6FE10004D71C9 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02173E7E1ED6FE10004D71C9 /* Common.swift */; };
 		024DD2D81E659EDD004E6335 /* UIBarButtonItem-Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024DD2D71E659EDD004E6335 /* UIBarButtonItem-Category.swift */; };
 		024DD2DA1E65A833004E6335 /* TitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024DD2D91E65A833004E6335 /* TitleButton.swift */; };
+		025191081ED461D30044FC96 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025191061ED461D30044FC96 /* OAuthViewController.swift */; };
+		025191091ED461D30044FC96 /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 025191071ED461D30044FC96 /* OAuthViewController.xib */; };
 		0252038B1E6A54F6006B0F2F /* PopoverControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 025203891E6A54F6006B0F2F /* PopoverControllerViewController.swift */; };
 		0252038C1E6A54F6006B0F2F /* PopoverControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0252038A1E6A54F6006B0F2F /* PopoverControllerViewController.xib */; };
 		0252038E1E6A5CB7006B0F2F /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0252038D1E6A5CB7006B0F2F /* PresentationController.swift */; };
@@ -57,8 +60,11 @@
 
 /* Begin PBXFileReference section */
 		0207004A1E627C7600E44556 /* UIButton-Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-Category.swift"; sourceTree = "<group>"; };
+		02173E7E1ED6FE10004D71C9 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		024DD2D71E659EDD004E6335 /* UIBarButtonItem-Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Category.swift"; sourceTree = "<group>"; };
 		024DD2D91E65A833004E6335 /* TitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleButton.swift; sourceTree = "<group>"; };
+		025191061ED461D30044FC96 /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		025191071ED461D30044FC96 /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
 		025203891E6A54F6006B0F2F /* PopoverControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverControllerViewController.swift; sourceTree = "<group>"; };
 		0252038A1E6A54F6006B0F2F /* PopoverControllerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverControllerViewController.xib; sourceTree = "<group>"; };
 		0252038D1E6A5CB7006B0F2F /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,7 @@
 				020700491E627C3000E44556 /* Category */,
 				024DD2D91E65A833004E6335 /* TitleButton.swift */,
 				02B185721E6ED9F300EF507E /* NetworkTool.swift */,
+				02173E7E1ED6FE10004D71C9 /* Common.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -138,6 +145,15 @@
 				024DD2D71E659EDD004E6335 /* UIBarButtonItem-Category.swift */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		025191051ED461AD0044FC96 /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				025191061ED461D30044FC96 /* OAuthViewController.swift */,
+				025191071ED461D30044FC96 /* OAuthViewController.xib */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 		025203881E6A54A8006B0F2F /* Popover */ = {
@@ -240,6 +256,7 @@
 		0274F6A01E5945FC00A0FBC8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				025191051ED461AD0044FC96 /* OAuth */,
 				02FC0A4F1E62EF1300648A20 /* Visitor */,
 				0274F6A51E59782300A0FBC8 /* MainViewController.swift */,
 				02FC0A501E62EF3200648A20 /* BaseViewController.swift */,
@@ -415,6 +432,7 @@
 				02FC0A551E62F09100648A20 /* VisitorView.xib in Resources */,
 				026BC2241E5DB77A0005A3C3 /* Discover.storyboard in Resources */,
 				026BC21C1E5DB73B0005A3C3 /* Home.storyboard in Resources */,
+				025191091ED461D30044FC96 /* OAuthViewController.xib in Resources */,
 				0274F6771E5940D200A0FBC8 /* Assets.xcassets in Resources */,
 				02E93D791E5B1AC400D07B3C /* MainVCSettings.json in Resources */,
 				026BC21F1E5DB74D0005A3C3 /* Message.storyboard in Resources */,
@@ -494,10 +512,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02173E7F1ED6FE10004D71C9 /* Common.swift in Sources */,
 				0274F6AE1E5979D700A0FBC8 /* ProfileViewController.swift in Sources */,
 				0274F6701E5940D200A0FBC8 /* AppDelegate.swift in Sources */,
 				0252038B1E6A54F6006B0F2F /* PopoverControllerViewController.swift in Sources */,
 				0274F6A61E59782300A0FBC8 /* MainViewController.swift in Sources */,
+				025191081ED461D30044FC96 /* OAuthViewController.swift in Sources */,
 				02B185731E6ED9F300EF507E /* NetworkTool.swift in Sources */,
 				0274F6AA1E5979B900A0FBC8 /* MessageViewController.swift in Sources */,
 				024DD2DA1E65A833004E6335 /* TitleButton.swift in Sources */,
@@ -668,10 +688,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Weibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dwt.Weibo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DS11WB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -682,10 +703,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Weibo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Dwt.Weibo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.520it.DS11WB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
