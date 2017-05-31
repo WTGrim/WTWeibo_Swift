@@ -12,7 +12,7 @@ class BaseViewController: UITableViewController {
 
     
     //对登录与否进行判断，并且加载对应的视图
-    var isLogin:Bool = false
+    var isLogin:Bool = UserAccountViewModel.shareInstance.isLogin
     var visitorView:VisitorView = VisitorView.visitorView()
     
     override func loadView() {

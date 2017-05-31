@@ -33,9 +33,12 @@ extension OAuthViewController{
     
     private func loadWeb(){
         let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(app_key)&redirect_uri=\(redirect_uri)"
+
+
         guard let url = NSURL(string: urlString) else{
             return
         }
+        print(url)
         let request = NSURLRequest(URL: url)
         webView.delegate = self
         webView .loadRequest(request)
@@ -96,8 +99,46 @@ extension OAuthViewController{
                 print(error)
                 return
             }
+            //MARK:-拿到结果
+            guard let accountDict = result else {
+                print("没有拿到授权结果")
+                return
+            }
+            let account = UserAccount(dict: accountDict)
+            print(account)
             
-            print(result)
+            //MARK:-请求用户信息(在闭包中调用当前的私有方法需要加上self)
+            self.loadUserInfo(account)
+        }
+    }
+    
+    private func loadUserInfo(accout : UserAccount){
+        guard let accessToken = accout.access_token else{
+            return
+        }
+        
+        guard let uid = accout.uid else{
+            return
+        }
+        NetworkTool.shareInstance.loadUserInfo(accessToken, uid: uid) { (result, error) -> () in
+            if error != nil {
+                print(error)
+                return
+            }
+            guard let userInfoDict = result else{
+                return
+            }
+            accout.screen_name = userInfoDict["screen_name"] as? String
+            accout.avatar_large = userInfoDict["avatar_large"] as? String
+            
+            //将account对象进行保存
+            NSKeyedArchiver.archiveRootObject(accout, toFile: UserAccountViewModel.shareInstance.accountPath)
+            //将对象保存到单例中
+            UserAccountViewModel.shareInstance.account = accout
+            //退出当前控制器
+            self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                
+            })
         }
     }
 }

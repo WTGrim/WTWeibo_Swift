@@ -55,6 +55,7 @@ extension NetworkTool{
     }
 }
 
+//MARK:- 获取accessToken
 extension NetworkTool{
     
     func loadAccessToken(code : String, finished:(result : [String : AnyObject]?, error : NSError?)->()){
@@ -68,3 +69,15 @@ extension NetworkTool{
         }
     }
 }
+
+//MARK:-获取用户信息
+extension NetworkTool{
+    func loadUserInfo(accessToken:String, uid:String, finished : (result : [String : AnyObject]?, error : NSError?)->()){
+        let urlString = "https://api.weibo.com/2/users/show.json"
+        let parameters = ["urlString":urlString, "uid":uid]
+        request(.GET, URLString: urlString, parameters: parameters) { (result, error) -> () in
+            finished(result: result as? [String:AnyObject], error: error)
+        }
+    }
+}
+
